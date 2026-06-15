@@ -352,18 +352,6 @@
     .project-meta span { display: flex; align-items: center; gap: 5px; }
     .project-desc    { font-size: 13px; color: var(--text-muted); margin-top: 8px; line-height: 1.7; }
 
-    /* ─── Contact ─── */
-    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
-    .contact-item {
-      display: flex; align-items: flex-start; gap: 14px;
-      padding: 14px 16px; background: #f6f8fa;
-      border: 1px solid var(--border); border-radius: 8px;
-    }
-    .contact-item i { font-size: 18px; color: var(--accent); width: 24px; text-align: center; margin-top: 2px; }
-    .contact-label { font-size: 11px; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: .5px; margin-bottom: 2px; }
-    .contact-value { font-size: 13.5px; color: var(--text); }
-    .contact-value a { color: var(--accent); }
-
     /* ─── Honors ─── */
     .honors-list { display: flex; flex-direction: column; gap: 0; }
     .honor-item {
@@ -411,7 +399,7 @@
       .sidebar-card { display: flex; gap: 20px; text-align: left; align-items: center; }
       .avatar-wrap { width: 80px; height: 80px; flex-shrink: 0; margin: 0; }
       .sidebar-icons { justify-content: flex-start; }
-      .research-grid, .contact-grid { grid-template-columns: 1fr; }
+      .research-grid { grid-template-columns: 1fr; }
       #lang-toggle { top: auto; bottom: 20px; right: 16px; }
       #topnav { padding: 0 12px; gap: 0; }
       #topnav a { padding: 10px 10px; font-size: 12px; }
@@ -431,7 +419,6 @@
   <a href="#service" data-i18n="nav_service">Service</a>
   <a href="#talks" data-i18n="nav_talks">Talks</a>
   <a href="#projects" data-i18n="nav_proj">Projects</a>
-  <a href="#contact" data-i18n="nav_contact">Contact</a>
   <!-- Language toggle embedded in nav bar right side -->
   <div style="margin-left:auto; display:flex; align-items:center; gap:2px; padding: 6px 0;">
     <button class="lang-btn active" id="btn-en" onclick="setLang('en')">EN</button>
@@ -545,34 +532,6 @@
       <div class="project-list" id="project-list"></div>
     </section>
 
-    <!-- Contact -->
-    <section class="section-card" id="contact">
-      <div class="section-title"><span class="emoji">✉️</span> <span data-i18n="sec_contact"></span></div>
-      <div class="contact-grid">
-        <div class="contact-item">
-          <i class="fa-solid fa-envelope"></i>
-          <div>
-            <div class="contact-label">Email</div>
-            <div class="contact-value"><a href="mailto:yinhr6@mail2.sysu.edu.cn">yinhr6@mail2.sysu.edu.cn</a></div>
-          </div>
-        </div>
-        <div class="contact-item">
-          <i class="fa-solid fa-location-dot"></i>
-          <div>
-            <div class="contact-label" data-i18n="contact_addr_label"></div>
-            <div class="contact-value" data-i18n="contact_addr"></div>
-          </div>
-        </div>
-        <div class="contact-item">
-          <i class="fa-solid fa-clock"></i>
-          <div>
-            <div class="contact-label" data-i18n="contact_office_label"></div>
-            <div class="contact-value" data-i18n="contact_office"></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <footer>
       <span data-i18n="footer_updated"></span> &nbsp;·&nbsp;
       Based on <a href="https://github.com/RayeRen/acad-homepage.github.io" target="_blank">AcadHomepage</a> style
@@ -594,7 +553,7 @@ const FALLBACK = {
   en: {
     nav_about:"About Me", nav_edu:"Education", nav_news:"News",
     nav_honors:"Honors", nav_pub:"Publications", nav_research:"Research",
-    nav_service:"Service", nav_talks:"Talks", nav_proj:"Projects", nav_contact:"Contact",
+    nav_service:"Service", nav_talks:"Talks", nav_proj:"Projects",
     sidebar_title:"Research Fellow\nHarbin Institute of Technology, Shenzhen",
     sidebar_loc:"Shenzhen, China",
     sec_about:"About Me", sec_edu:"Education",
@@ -603,18 +562,14 @@ const FALLBACK = {
     sec_research:"Research Interests",
     sec_service:"Academic Service",
     sec_talks:"Invited Talks & Presentations",
-    sec_proj:"Projects", sec_contact:"Contact",
+    sec_proj:"Projects",
     pub_all:"All", pub_journal:"Journal", pub_conf:"Conference", pub_book:"Book",
-    contact_addr_label:"Address",
-    contact_addr:"Harbin Institute of Technology, Shenzhen, Guangdong, China",
-    contact_office_label:"Office Hours",
-    contact_office:"By appointment via email",
     footer_updated:"Last updated: June 2026",
   },
   zh: {
     nav_about:"个人简介", nav_edu:"教育背景", nav_news:"最新动态",
     nav_honors:"荣誉奖项", nav_pub:"发表论文", nav_research:"研究方向",
-    nav_service:"学术服务", nav_talks:"邀请报告", nav_proj:"科研项目", nav_contact:"联系方式",
+    nav_service:"学术服务", nav_talks:"邀请报告", nav_proj:"科研项目",
     sidebar_title:"博士后\n哈尔滨工业大学（深圳）",
     sidebar_loc:"中国，深圳",
     sec_about:"个人简介", sec_edu:"教育背景",
@@ -623,24 +578,20 @@ const FALLBACK = {
     sec_research:"研究方向",
     sec_service:"学术服务",
     sec_talks:"邀请报告与现场汇报",
-    sec_proj:"科研项目", sec_contact:"联系方式",
+    sec_proj:"科研项目",
     pub_all:"全部", pub_journal:"期刊", pub_conf:"会议", pub_book:"专著",
-    contact_addr_label:"地址",
-    contact_addr:"哈尔滨工业大学（深圳），广东深圳，中国",
-    contact_office_label:"预约方式",
-    contact_office:"请通过邮件联系",
     footer_updated:"最后更新：2026年6月",
   }
   },
   data: {
   about: {
     en: `
-      <p>I am Haoran Yin (Graduate Student Member, IEEE). I received my B.Eng. and D.Eng. degrees from the
+      <p>I received my B.Eng. and D.Eng. (Hons.) degrees from the
       School of Electronics and Communication Engineering, Sun Yat-sen University (SYSU), China,
-      in 2021 and 2026, respectively. From July 2025 to March 2026, I was a visiting Ph.D. student at the
-      <strong>Wireless Research Lab, New York University (NYU) Abu Dhabi</strong>,
+      in 2021 and 2026, respectively, under the supervision of Prof. Yanqun Tang. From July 2025 to March 2026, I was a visiting Ph.D. student at the
+      Wireless Research Lab, New York University (NYU) Abu Dhabi,
       supervised by Prof. Marwa Chafii .
-      I am joining <strong>Harbin Institute of Technology, Shenzhen (HIT Shenzhen)</strong> as a Research Fellow under Prof. Qinyu Zhang.
+      I am joining Harbin Institute of Technology, Shenzhen (HIT Shenzhen) as a Research Fellow under Prof. Qinyu Zhang.
       My research interests include advanced waveform design for <strong>Affine Frequency Division Multiplexing (AFDM)</strong>,
       channel estimation, and <strong>Integrated Sensing and Communications (ISAC)</strong>
       for next-generation satellite and low-altitude wireless networks.</p>
@@ -649,9 +600,9 @@ const FALLBACK = {
         Google Scholar &nbsp;\u00b7&nbsp; 580+ citations &nbsp;\u00b7&nbsp; h-index = 11 &nbsp;\u00b7&nbsp; i10-index = 18
       </a>`,
     zh: `
-      <p>我分别于2021年和2026年在中山大学电子与通信工程学院获得工学学士和博士学位。2025年7月至2026年3月，受国家留学基金委（CSC）资助，赴<strong>纽约大学（阿布扎比主校区）无线通信实验室</strong>
+      <p>我分别于2021年和2026年在中山大学电子与通信工程学院获得工学学士和博士学位，导师为唐燕群教授。2025年7月至2026年3月，受国家留学基金委（CSC）资助，赴纽约大学（阿布扎比主校区）无线通信实验室
       开展联合培养，导师为Marwa Chafii教授。
-      我即将加入<strong>哈尔滨工业大学（深圳）</strong>担任博士后，合作导师张钦宇教授。
+      我即将加入哈尔滨工业大学（深圳）担任博士后，合作导师张钦宇教授。
       我的研究方向包括：面向<strong>仿射频分复用（AFDM）</strong>的先进波形设计、信道估计、以及面向下一代卫星通信与低空无线网络的
       <strong>通信感知一体化（ISAC）</strong>。</p>
       <a class="scholar-badge" href="https://scholar.google.com/citations?user=c-d740gAAAAJ&hl=en" target="_blank">
@@ -662,12 +613,12 @@ const FALLBACK = {
 
   education: [
     {
-      degree:{ en:"D.Eng. (Combined Master-Doctoral Program)", zh:"工程博士（硕博连读）" },
+      degree:{ en:"D.Eng. (Combined Master-Doctoral Program, Honors)", zh:"工程博士（硕博连读）" },
       major:{ en:"Electronic Information", zh:"电子信息" },
       uni:{ en:"Sun Yat-sen University (985)", zh:"中山大学（985工程）" },
       period:"Sep 2021 – Jun 2026",
-      advisor:{ en:"Assoc. Prof. Yanqun Tang",
-                zh:"唐燕群副教授（广东省海空天通信重点实验室副主任）" },
+      advisor:{ en:"Prof. Yanqun Tang",
+                zh:"唐燕群教授（广东省海空天通信重点实验室副主任）" },
       location:{ en:"Shenzhen, Guangdong, China", zh:"广东深圳" }
     },
     {
@@ -675,8 +626,8 @@ const FALLBACK = {
       major:{ en:"Wireless Communications", zh:"无线通信" },
       uni:"New York University (NYU) Abu Dhabi",
       period:"Jul 2025 – Mar 2026",
-      advisor:{ en:"Prof. Marwa Chafii ",
-                zh:"Marwa Chafii教授（IEEE TCOM编辑）" },
+      advisor:{ en:"Prof. Marwa Chafii",
+                zh:"Marwa Chafii教授" },
       location:{ en:"Abu Dhabi, UAE", zh:"阿联酋阿布扎比" }
     },
     {
@@ -693,7 +644,7 @@ const FALLBACK = {
       en:"Joining <strong>Harbin Institute of Technology, Shenzhen (HIT Shenzhen)</strong> as a <strong>Research Fellow</strong>.",
       zh:"即将加入<strong>哈尔滨工业大学（深圳）</strong>，担任<strong>博士后</strong>。" },
     { date:"2026-06", type:"career",
-      en:"Received <strong>Doctor of Engineering (D.Eng.) (Honors) degree</strong> from Sun Yat-sen University.",
+      en:"Received <strong>Doctor of Engineering (D.Eng.) degree</strong> from Sun Yat-sen University.",
       zh:"博士毕业，获中山大学工学博士学位。" },
     { date:"2026-03", type:"career",
       en:"Completed joint Ph.D. training at NYU Abu Dhabi.",
@@ -986,7 +937,7 @@ const FALLBACK = {
 // ══════════════════════════════════════════════════════════════════════════════
 async function loadData() {
   try {
-    const res = await fetch('data2.json');
+    const res = await fetch('data2.json?v=3');
     if (!res.ok) throw new Error('fetch failed');
     const json = await res.json();
     I18N = json.i18n;
