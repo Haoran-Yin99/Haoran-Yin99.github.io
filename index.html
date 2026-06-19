@@ -836,19 +836,16 @@ const FALLBACK = {
         { num:"i10=18", label:"i10指数" },
       ]
     },
-    roles: {
-      en: [
+    roles: [
         { type:"chair",
-          items:[
-            "TPC Chair, 6G Key Waveform Technologies Session, <strong>IEEE PIMRC 2025</strong>" ] },
+          items:{ en:["TPC Chair, 6G Key Waveform Technologies Session, <strong>IEEE PIMRC 2025</strong>"], zh:["担任 IEEE PIMRC 2025 6G关键波形技术分会 TPC Chair"] } },
         { type:"reviewer",
-          label:"Reviewer for IEEE Journals",
+          label:{ en:"Reviewer for IEEE Journals", zh:"IEEE期刊审稿人" },
           journals:["IEEE JSAC","IEEE TWC","IEEE TMC","IEEE TCCN","IEEE TCOM","IEEE TVT","IEEE WCM","COMMAG","IEEE NETWORK","IEEE WCL","IEEE COMML"] },
         { type:"reviewer",
-          label:"Reviewer for IEEE Conferences",
+          label:{ en:"Reviewer for IEEE Conferences", zh:"IEEE会议审稿人" },
           journals:["IEEE GLOBECOM","IEEE ICC","IEEE ISIT","IEEE WCNC","IEEE VTC","IEEE PIMRC","IEEE/CIC ICCC"] },
       ]
-    }
   },
 
   honors: {
@@ -1089,7 +1086,6 @@ function renderResearch() {
 function renderService() {
   const el = document.getElementById('service-content');
   const stats = DATA.service.stats[LANG];
-  const roles = DATA.service.roles[LANG];
 
   const statsHtml = `
     <div class="service-stats">
@@ -1106,18 +1102,18 @@ function renderService() {
     zh:{ chair:"分会主席", reviewer:"", talk:"邀请报告与现场汇报" }
   };
 
-  const rolesHtml = roles.map(r => {
+  const rolesHtml = DATA.service.roles.map(r => {
     if (r.type === 'reviewer') {
       const tags = r.journals.map(j=>`<span class="service-journal-tag">${j}</span>`).join('');
       return `
         <div class="service-section">
-          <div class="service-subtitle"><i class="fa-solid fa-file-pen"></i> ${r.label}</div>
+          <div class="service-subtitle"><i class="fa-solid fa-file-pen"></i> ${t(r.label)}</div>
           <div class="service-journal-tags">${tags}</div>
         </div>`;
     }
     const icon = roleIcons[r.type] || '•';
     const title = roleTitles[LANG][r.type] || '';
-    const items = r.items.map(it=>`<div class="service-item">${it}</div>`).join('');
+    const items = (r.items[LANG] || r.items).map(it=>`<div class="service-item">${it}</div>`).join('');
     return `
       <div class="service-section">
         <div class="service-subtitle">${icon} ${title}</div>

@@ -71,7 +71,7 @@
         "zh": "电子信息"
       },
       "uni": {
-        "en": "Sun Yat-sen University (985)",
+        "en": "Sun Yat-sen University",
         "zh": "中山大学（985工程）"
       },
       "period": "Sep 2021 – Jun 2026",
@@ -118,7 +118,7 @@
         "zh": "通信工程"
       },
       "uni": {
-        "en": "Sun Yat-sen University (985)",
+        "en": "Sun Yat-sen University",
         "zh": "中山大学（985工程）"
       },
       "period": "Sep 2017 – Jun 2021",
@@ -579,74 +579,55 @@
         }
       ]
     },
-    "roles": {
-      "en": [
-        {
-          "type": "chair",
-          "items": [
+    "roles": [
+      {
+        "type": "chair",
+        "items": {
+          "en": [
             "TPC Chair, 6G Key Waveform Technologies Session, <strong>IEEE PIMRC 2025</strong>"
-          ]
-        },
-        {
-          "type": "reviewer",
-          "label": "Reviewer for IEEE Journals",
-          "journals": [
-            "IEEE JSAC",
-            "IEEE TWC",
-            "IEEE TMC",
-            "IEEE TCCN",
-            "IEEE TCOM",
-            "IEEE TVT",
-            "IEEE WCM",
-            "IEEE WCL"
-          ]
-        },
-        {
-          "type": "reviewer",
-          "label": "Reviewer for IEEE Conferences",
-          "journals": [
-            "IEEE GLOBECOM",
-            "IEEE ICC",
-            "IEEE ISIT",
-            "IEEE WCNC",
-            "IEEE VTC"
+          ],
+          "zh": [
+            "担任 IEEE PIMRC 2025 6G关键波形技术分会 TPC Chair"
           ]
         }
-      ],
-      "zh": [
-        {
-          "type": "chair",
-          "items": [
-            "技术委员主席，6G关键波形技术分会，<strong>IEEE PIMRC 2025</strong>"
-          ]
+      },
+      {
+        "type": "reviewer",
+        "label": {
+          "en": "Reviewer for IEEE Journals",
+          "zh": "IEEE期刊审稿人"
         },
-        {
-          "type": "reviewer",
-          "label": "IEEE期刊审稿人",
-          "journals": [
-            "IEEE JSAC",
-            "IEEE TWC",
-            "IEEE TMC",
-            "IEEE TCCN",
-            "IEEE TCOM",
-            "IEEE TVT",
-            "IEEE WCM",
-            "IEEE WCL"
-          ]
+        "journals": [
+          "IEEE JSAC",
+          "IEEE TWC",
+          "IEEE TMC",
+          "IEEE TCCN",
+          "IEEE TCOM",
+          "IEEE TVT",
+          "IEEE WCM",
+          "COMMAG",
+          "IEEE NETWORK",
+          "IEEE WCL",
+          "IEEE COMML"
+        ]
+      },
+      {
+        "type": "reviewer",
+        "label": {
+          "en": "Reviewer for IEEE Conferences",
+          "zh": "IEEE会议审稿人"
         },
-        {
-          "type": "reviewer",
-          "label": "IEEE会议审稿人",
-          "journals": [
-            "IEEE GLOBECOM",
-            "IEEE ICC",
-            "IEEE ISIT",
-            "IEEE WCNC",
-            "IEEE VTC"
-          ]
-        }
-      ]
-    }
+        "journals": [
+          "IEEE GLOBECOM",
+          "IEEE ICC",
+          "IEEE ISIT",
+          "IEEE WCNC",
+          "IEEE VTC",
+          "IEEE PIMRC",
+          "IEEE/CIC ICCC"
+        ]
+      }
+    ]
   },
   "honors": {
     "en": [
