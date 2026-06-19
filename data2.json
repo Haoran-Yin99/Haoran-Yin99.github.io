@@ -29,7 +29,7 @@
       "footer_updated": "Last updated: June 2026"
     },
     "zh": {
-      "nav_about": "关于",
+      "nav_about": "个人简介",
       "nav_edu": "教育背景",
       "nav_news": "最新动态",
       "nav_honors": "荣誉奖项",
@@ -84,8 +84,8 @@
         "zh": "广东深圳"
       },
       "thesis": {
-        "en": "Research on Key Technologies of Affine Frequency Division Multiplexing Systems for High-Mobility Scenarios",
-        "zh": "面向高动态场景的仿射频分复用系统关键技术研究"
+        "en": "Research on Key Technologies of Affine Frequency Division Multiplexing Systems for High-Mobility Scenarios (Outstanding Doctoral Thesis Award, SYSU)",
+        "zh": "面向高动态场景的仿射频分复用系统关键技术研究（校级优秀毕业论文）"
       }
     },
     {
