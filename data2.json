@@ -544,7 +544,7 @@
     "stats": {
       "en": [
         {
-          "num": "580+",
+          "num": "600+",
           "label": "Google Scholar Citations"
         },
         {
@@ -552,7 +552,7 @@
           "label": "Citations in 2025"
         },
         {
-          "num": "h=11",
+          "num": "h=12",
           "label": "h-index"
         },
         {
@@ -562,7 +562,7 @@
       ],
       "zh": [
         {
-          "num": "580+",
+          "num": "600+",
           "label": "Google学术引用"
         },
         {
@@ -570,7 +570,7 @@
           "label": "2025年度被引"
         },
         {
-          "num": "h=11",
+          "num": "h=12",
           "label": "h指数"
         },
         {
