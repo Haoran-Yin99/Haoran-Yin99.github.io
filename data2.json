@@ -204,7 +204,7 @@
       "abbr": "",
       "title": {
         "en": "Affine Frequency Division Multiplexing (AFDM): Principles and Applications",
-        "zh": "仿射频分复用（AFDM）：原理与应用"
+        "zh": "Affine Frequency Division Multiplexing (AFDM): Principles and Applications"
       },
       "authors": "Y. Tang, <strong>H. Yin</strong>, Y. Ge",
       "venue": {
@@ -260,7 +260,7 @@
       "abbr": "IEEE COMST",
       "title": {
         "en": "A unified multicarrier waveform framework for next-generation wireless networks: Principles, performance, and challenges",
-        "zh": "面向下一代无线网络的统一多载波波形框架：原理、性能与挑战"
+        "zh": "A unified multicarrier waveform framework for next-generation wireless networks: Principles, performance, and challenges"
       },
       "authors": "X. Zhang, <strong>H. Yin</strong>, Y. Tang, Y. Ge, Y. Zeng, M. Wen, Z. Liu, Y. L. Guan, H. Arslan, G. Caire",
       "venue": {
@@ -290,7 +290,7 @@
       "abbr": "IEEE TWC",
       "title": {
         "en": "Cyclic delay-Doppler shift: A simple transmit diversity technique for ultra-reliable communications in doubly selective channels",
-        "zh": "循环时延多普勒移位：双弥散信道超可靠通信的简单发射分集技术"
+        "zh": "Cyclic delay-Doppler shift: A simple transmit diversity technique for ultra-reliable communications in doubly selective channels"
       },
       "authors": "<strong>H. Yin</strong>, Y. Zhou, Y. Tang, D. Zhang, C. Zhang, X. Wei, J. Xiong, F. Liu, M. Chafii, M. Debbah",
       "venue": {
@@ -318,7 +318,7 @@
       "abbr": "IEEE JSAC",
       "title": {
         "en": "Ambiguity function analysis of AFDM signals for integrated sensing and communications",
-        "zh": "AFDM信号模糊函数分析用于通信感知一体化"
+        "zh": "Ambiguity function analysis of AFDM signals for integrated sensing and communications"
       },
       "authors": "<strong>H. Yin</strong>, Y. Tang, Y. Ni, Z. Wang, G. Chen, J. Xiong, K. Yang, M. Kountouris, Y. L. Guan, Y. Zeng",
       "venue": {
@@ -348,7 +348,7 @@
       "abbr": "IEEE WCM",
       "title": {
         "en": "Affine frequency division multiplexing: Extending OFDM for scenario-flexibility and resilience",
-        "zh": "仿射频分复用：扩展OFDM以适应多场景灵活性与鲁棒性"
+        "zh": "Affine frequency division multiplexing: Extending OFDM for scenario-flexibility and resilience"
       },
       "authors": "<strong>H. Yin</strong>, Y. Tang, A. Bemani, M. Kountouris, Y. Zhou, X. Zhang, Y. Liu, G. Chen, K. Yang, F. Liu, C. Masouros, S. Li, G. Caire, P. Xiao",
       "venue": {
@@ -378,7 +378,7 @@
       "abbr": "IEEE TWC",
       "title": {
         "en": "Diagonally reconstructed channel estimation for MIMO-AFDM with inter-Doppler interference in doubly selective channels",
-        "zh": "双弥散信道中含多普勒干扰的MIMO-AFDM对角重构信道估计"
+        "zh": "Diagonally reconstructed channel estimation for MIMO-AFDM with inter-Doppler interference in doubly selective channels"
       },
       "authors": "<strong>H. Yin</strong>, X. Wei, Y. Tang, K. Yang",
       "venue": {
@@ -410,7 +410,7 @@
       "abbr": "IEEE GLOBECOM",
       "title": {
         "en": "Evaluation and design criterion for pulse-shaped AFDM",
-        "zh": "脉冲成形AFDM的评估与设计准则"
+        "zh": "Evaluation and design criterion for pulse-shaped AFDM"
       },
       "authors": "<strong>H. Yin</strong>, Y. Tang, S. Li, Y. Zhou, C. Yi",
       "venue": {
@@ -438,7 +438,7 @@
       "abbr": "IEEE ICASSP-W",
       "title": {
         "en": "Cyclic delay-Doppler shift: A simple transmit diversity technique for delay-Doppler waveforms in doubly selective channels",
-        "zh": "循环时延多普勒移位：双弥散信道时延多普勒波形的简单发射分集"
+        "zh": "Cyclic delay-Doppler shift: A simple transmit diversity technique for delay-Doppler waveforms in doubly selective channels"
       },
       "authors": "<strong>H. Yin</strong>, J. Xiong, Y. Zhou, C. Zhang, D. Zhang, X. Wei",
       "venue": {
@@ -466,7 +466,7 @@
       "abbr": "IEEE/CIC ICCC",
       "title": {
         "en": "Pilot aided channel estimation for AFDM in doubly dispersive channels",
-        "zh": "双弥散信道中AFDM导频辅助信道估计"
+        "zh": "Pilot aided channel estimation for AFDM in doubly dispersive channels"
       },
       "authors": "<strong>H. Yin</strong>, Y. Tang",
       "venue": {
